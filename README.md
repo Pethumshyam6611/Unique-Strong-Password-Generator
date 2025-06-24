@@ -1,4 +1,33 @@
-# Unique-Strong-Password-Generator
+# 🔐 Unique Password Generator
+
+A lightweight and responsive **password generator** application built using **React, HTML, CSS, and Bootstrap**.  
+It allows users to quickly generate strong and unique passwords with customizable options, all wrapped in a clean and intuitive user interface.
+
+---
+
+## 🎯 Features
+
+- ✅ Generate secure, random passwords
+- ⚙️ Customizable options:
+  - Include uppercase, lowercase, numbers, symbols
+  - Set desired password length
+- 💡 Copy to clipboard with one click
+- 🖥️ Fully responsive design (mobile/tablet/desktop)
+- 🎨 Built with Bootstrap and custom CSS for a clean UI
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology  | Description                 |
+|-------------|-----------------------------|
+| React       | Frontend logic and state    |
+| HTML/CSS    | Structure and styling       |
+| Bootstrap   | Responsive UI components    |
+| JavaScript  | Password generation logic   |
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
