@@ -1,0 +1,151 @@
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.password-generator {
+  background-color: #1f1f38;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  width: 400px;
+}
+
+h1 {
+  color: #00ffff; /* Neon Aqua */
+  margin-bottom: 25px;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.password-display input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #2a2a4e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.control-group label {
+  font-size: 0.95em;
+  color: #c0c0c0;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.control-group label input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #00ffff; /* Neon Aqua for checkbox */
+}
+
+.generate-button {
+  background-color: #00ffff; /* Neon Aqua */
+  color: #1a1a2e; /* Dark background for text on button */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-top: 15px;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.generate-button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.password-display {
+  position: relative; /* Needed for absolute positioning of copied message */
+}
+
+.copied-message {
+  position: absolute;
+  bottom: -30px; /* Adjusted for a bit more space */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00ffff;
+  color: #1a1a2e;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+
+/* Basic styling for range input track and thumb for a more futuristic feel */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #3a3a5e;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00ffff; /* Neon Aqua */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px #00ffff;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #00ffff; /* Neon Aqua */
+  border-radius: 50%;
+  cursor: pointer;
+  border: none; /* Important for Firefox */
+  box-shadow: 0 0 5px #00ffff;
+}
+
+/* Add Orbitron font from Google Fonts */
+/* Ensure this is at the very top of the file if not already, or in index.css/index.html */
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap'); */
+/* It's already at the end, which is fine for CSS, but often preferred at the top. */
